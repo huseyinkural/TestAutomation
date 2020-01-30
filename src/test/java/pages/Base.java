@@ -63,10 +63,9 @@ public class Base {
 
 
             if (!imageLoaded) {
-
                 System.out.println("Image not displayed.");
             } else {
-               // System.out.println(img.findElement(By.tagName("img")).getAttribute("alt"));
+                System.out.println(img.findElement(By.tagName("img")).getAttribute("alt"));
                 System.out.println("Image displayed.");
             }
         }

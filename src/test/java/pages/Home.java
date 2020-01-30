@@ -24,6 +24,7 @@ public class Home extends Base {
     }
 
     public Home closePopupWindow(){
+
         click(closePopupBy);
         return this;
     }

@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
+import java.util.Random;
 
 public class NavigationTab extends Base {
     public NavigationTab(WebDriver driver) {
@@ -54,4 +55,18 @@ public class NavigationTab extends Base {
         checkImageValidity(allImages);
 
     }
+
+    public Boutique openRandomTab(){
+        List<WebElement> tabs = driver.findElements(By.className("tab-link"));
+
+        Random rand = new Random();
+        int value = rand.nextInt(tabs.size());
+        System.out.println("val"+value);
+
+        tabs.get(value).click();
+
+        return new Boutique(driver);
+    }
+
+
 }
