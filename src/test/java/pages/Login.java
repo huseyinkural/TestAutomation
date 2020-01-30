@@ -9,17 +9,18 @@ public class Login extends Base{
     }
 
 
-    By usernameBy = By.id("email");
+    By emailBy = By.id("email");
     By passwordBy = By.id("password");
-    By loginButtonBy = By.id("loginButton");
-    By errorMessageUsernameBy = By.xpath("//*[@id=\"loginForm\"]/div[1]/div/div");
-    By errorMessagePasswordBy = By.xpath("//*[@id=\"loginForm\"]/div[2]/div/div ");
+    By loginButtonBy = By.id("loginSubmit");
+    By errorMessageUsernameBy = By.xpath("//*[@id=\"errorBox\"]");
+    By errorMessagePasswordBy = By.xpath("//*[@id=\"errorBox\"]");
+    By loggedInBy = By.id("logged-in-container");
 
 
 
-    public Login loginToTrendyol (String username, String password){
+    public Login loginToTrendyol (String email, String password){
 
-        writeText(usernameBy,username);
+        writeText(emailBy,email);
 
         writeText(passwordBy, password);
 
@@ -36,6 +37,11 @@ public class Login extends Base{
 
     public Login verifyLoginPassword (String expectedText) {
         assertEquals(errorMessagePasswordBy, expectedText);
+        return this;
+    }
+
+    public Login verifyLoggedIn (String expectedText) {
+        assertEquals(loggedInBy, expectedText);
         return this;
     }
 

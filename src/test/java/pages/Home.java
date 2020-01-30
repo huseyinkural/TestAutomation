@@ -14,12 +14,10 @@ public class Home extends Base {
     String baseURL = "https://www.trendyol.com/";
 
 
-    By signInButtonBy = By.className("btnSignIn");
+    By loginButtonBy = By.cssSelector(".login-register-button-container");
     By closePopupBy = By.cssSelector(".fancybox-item.fancybox-close");
 
 
-    //*********Page Methods*********
-    //Go to Homepage
     public Home goToTrendyol (){
         driver.get(baseURL);
         return this;
@@ -30,9 +28,12 @@ public class Home extends Base {
         return this;
     }
 
-    //Go to LoginPage
     public Login goToLogin (){
-        click(signInButtonBy);
+        click(loginButtonBy);
         return new Login(driver);
+    }
+
+    public NavigationTab goToTab (){
+        return new NavigationTab(driver);
     }
 }
