@@ -35,6 +35,33 @@ public class BoutiqueTest extends BaseTest {
 
     }
 
+    @Test(priority = 2)
+    public void verifyOpenProductDetail(){
+        Home homePage = new Home(driver);
+
+        homePage.goToTrendyol()
+                .closePopupWindow()
+                .goToTab()
+                .openRandomTab()
+                .openRandomBoutique()
+                .openProductDetail();
+    }
+
+    @Test(priority = 3)
+    public void verifyAddToBasket(){
+        Home homePage = new Home(driver);
+
+        homePage.goToTrendyol()
+                .closePopupWindow()
+                .goToTab()
+                .openRandomTab()
+                .openRandomBoutique()
+                .openProductDetail()
+                .addToBasket()
+                .verifyAddedToBasket("1 Ürün");
+
+    }
+
 
 
 }

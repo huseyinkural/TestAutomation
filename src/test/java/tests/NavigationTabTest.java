@@ -32,7 +32,6 @@ public class NavigationTabTest extends BaseTest {
                 .goToTab()
                 .openRandomTab();
 
-
     }
 
 

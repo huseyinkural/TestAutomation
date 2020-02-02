@@ -13,6 +13,10 @@ public class Boutique extends Base {
         super(driver);
     }
 
+    By addToBasketButtonBy = By.className("add-to-bs-tx");
+    By basketItemCountBy = By.id("titleBasketCount");
+    By basketBy = By.className("basket-button-container");
+
 
     public Boutique openRandomBoutique(){
 
@@ -34,7 +38,29 @@ public class Boutique extends Base {
 
     }
 
-    public void openProductDetail(){
+    public Boutique openProductDetail(){
+
+        List<WebElement> allProducts = driver.findElements(By.className("image-container"));
+        Random rand = new Random();
+        int productRandom = rand.nextInt(allProducts.size());
+
+        allProducts.get(productRandom).click();
+        return this;
+    }
+
+    public Boutique addToBasket(){
+
+        click(addToBasketButtonBy);
+
+        click(basketBy);
+        return this;
 
     }
+
+    public Boutique verifyAddedToBasket (String expectedText) {
+        assertEquals(basketItemCountBy, expectedText);
+        return this;
+    }
+
+
 }
