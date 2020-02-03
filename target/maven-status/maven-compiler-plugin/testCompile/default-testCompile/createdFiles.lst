@@ -1,0 +1,9 @@
+pages\NavigationTab.class
+tests\BaseTest.class
+tests\BoutiqueTest.class
+pages\Home.class
+tests\LoginTest.class
+tests\NavigationTabTest.class
+pages\Boutique.class
+pages\Base.class
+pages\Login.class

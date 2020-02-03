@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite"  >
-    <test name="LoginTest">
+    <test name="TrendyolTest">
+        <parameter name = "browser" value="chrome"/>
         <classes>
             <class name="tests.LoginTest"/>
+            <class name="tests.NavigationTabTest"/>
+            <class name="tests.BoutiqueTest"/>
         </classes>
     </test>
 </suite>

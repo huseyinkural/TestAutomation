@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-02-03T20:32:54 EET" name="Suite" finished-at="2020-02-03T20:35:55 EET" duration-ms="181406">
+    <groups>
+    </groups>
+    <test started-at="2020-02-03T20:32:54 EET" name="TrendyolTest" finished-at="2020-02-03T20:35:55 EET" duration-ms="181406">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.LoginTest@7f9fcf7f]" started-at="2020-02-03T20:32:54 EET" name="setup" finished-at="2020-02-03T20:33:04 EET" duration-ms="10445" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidLoginTest_InvalidUserNameInvalidPassword()[pri:0, instance:tests.LoginTest@7f9fcf7f]" started-at="2020-02-03T20:33:04 EET" name="invalidLoginTest_InvalidUserNameInvalidPassword" finished-at="2020-02-03T20:33:26 EET" duration-ms="21635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest_InvalidUserNameInvalidPassword -->
+        <test-method signature="invalidLoginTest_EmptyUserEmptyPassword()[pri:1, instance:tests.LoginTest@7f9fcf7f]" started-at="2020-02-03T20:33:26 EET" name="invalidLoginTest_EmptyUserEmptyPassword" finished-at="2020-02-03T20:33:32 EET" duration-ms="5519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest_EmptyUserEmptyPassword -->
+        <test-method signature="validLoginTest_CorrectUserAndPass()[pri:2, instance:tests.LoginTest@7f9fcf7f]" started-at="2020-02-03T20:33:32 EET" name="validLoginTest_CorrectUserAndPass" finished-at="2020-02-03T20:33:39 EET" duration-ms="7315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest_CorrectUserAndPass -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.LoginTest@7f9fcf7f]" started-at="2020-02-03T20:33:39 EET" name="teardown" finished-at="2020-02-03T20:33:40 EET" duration-ms="762" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.BoutiqueTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.BoutiqueTest@6328d34a]" started-at="2020-02-03T20:35:04 EET" name="setup" finished-at="2020-02-03T20:35:13 EET" duration-ms="9278" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyOpenRandomBoutique()[pri:0, instance:tests.BoutiqueTest@6328d34a]" started-at="2020-02-03T20:35:13 EET" name="verifyOpenRandomBoutique" finished-at="2020-02-03T20:35:29 EET" duration-ms="16511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOpenRandomBoutique -->
+        <test-method signature="verifyProductImage()[pri:1, instance:tests.BoutiqueTest@6328d34a]" started-at="2020-02-03T20:35:29 EET" name="verifyProductImage" finished-at="2020-02-03T20:35:36 EET" duration-ms="6363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductImage -->
+        <test-method signature="verifyOpenProductDetail()[pri:2, instance:tests.BoutiqueTest@6328d34a]" started-at="2020-02-03T20:35:36 EET" name="verifyOpenProductDetail" finished-at="2020-02-03T20:35:42 EET" duration-ms="6361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOpenProductDetail -->
+        <test-method signature="verifyAddToBasket()[pri:3, instance:tests.BoutiqueTest@6328d34a]" started-at="2020-02-03T20:35:42 EET" name="verifyAddToBasket" finished-at="2020-02-03T20:35:54 EET" duration-ms="12366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddToBasket -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.BoutiqueTest@6328d34a]" started-at="2020-02-03T20:35:54 EET" name="teardown" finished-at="2020-02-03T20:35:55 EET" duration-ms="829" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.BoutiqueTest -->
+      <class name="tests.NavigationTabTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.NavigationTabTest@2357d90a]" started-at="2020-02-03T20:33:40 EET" name="setup" finished-at="2020-02-03T20:33:49 EET" duration-ms="9293" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkImages()[pri:0, instance:tests.NavigationTabTest@2357d90a]" started-at="2020-02-03T20:33:49 EET" name="checkImages" finished-at="2020-02-03T20:35:00 EET" duration-ms="70900" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkImages -->
+        <test-method signature="verifyOpenRandomTab()[pri:0, instance:tests.NavigationTabTest@2357d90a]" started-at="2020-02-03T20:35:00 EET" name="verifyOpenRandomTab" finished-at="2020-02-03T20:35:03 EET" duration-ms="2986" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOpenRandomTab -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.NavigationTabTest@2357d90a]" started-at="2020-02-03T20:35:03 EET" name="teardown" finished-at="2020-02-03T20:35:04 EET" duration-ms="799" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.NavigationTabTest -->
+    </test> <!-- TrendyolTest -->
+  </suite> <!-- Suite -->
+</testng-results>

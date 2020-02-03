@@ -1,5 +1,7 @@
 package pages;
 
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -17,10 +19,13 @@ public class Base {
 
     public WebDriver driver;
     public WebDriverWait wait;
+    static final Logger logger = Logger.getLogger(Base.class);
 
     public Base (WebDriver driver){
         this.driver = driver;
         wait = new WebDriverWait(driver,20);
+        BasicConfigurator.configure();
+
     }
 
 
@@ -63,13 +68,20 @@ public class Base {
 
 
             if (!imageLoaded) {
-                System.out.println("Image not displayed.");
+                logger.debug("Image is not displayed.");
             } else {
-                System.out.println(img.findElement(By.tagName("img")).getAttribute("alt"));
-                System.out.println("Image displayed.");
+                //logger.debug("Image is displayed.");
             }
         }
 
+
+    }
+
+    public boolean isElementExist(By element){
+
+        boolean exists = driver.findElements(element).size() != 0;
+
+        return exists;
 
     }
 }

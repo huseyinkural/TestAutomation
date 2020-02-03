@@ -14,6 +14,7 @@ public class NavigationTabTest extends BaseTest {
 
     @Test(priority = 0)
     public void checkImages(){
+        System.out.println("Verify check all images test is started.");
         Home homePage = new Home(driver);
 
         homePage.goToTrendyol()
@@ -24,8 +25,8 @@ public class NavigationTabTest extends BaseTest {
 
     @Test
     public void verifyOpenRandomTab(){
+        System.out.println("Verify open random tab is started.");
         Home homePage = new Home(driver);
-
 
         homePage.goToTrendyol()
                 .closePopupWindow()

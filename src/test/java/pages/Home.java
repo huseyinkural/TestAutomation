@@ -25,7 +25,8 @@ public class Home extends Base {
 
     public Home closePopupWindow(){
 
-        click(closePopupBy);
+        if ( isElementExist(closePopupBy)) click(closePopupBy);
+
         return this;
     }
 

@@ -61,7 +61,6 @@ public class NavigationTab extends Base {
 
         Random rand = new Random();
         int value = rand.nextInt(tabs.size());
-        System.out.println("val"+value);
 
         tabs.get(value).click();
 
